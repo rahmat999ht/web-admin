@@ -26,6 +26,7 @@ $query = mysqli_query($conn, "SELECT * FROM table_gunung ORDER BY id_gunung DESC
                             <tbody>
                                 <tr>
                                     <td>
+                                        ID Gunung : <BR><?php echo $data['id_gunung'] ?><BR><BR>
                                         Nama Gunung : <BR><?php echo $data['nama'] ?><BR><BR>
                                         Lokasi Gunung : <BR><?php echo $data['lokasi'] ?><BR><BR>
                                         Titik Koordinat : <BR><?php echo $data['lat'] ?>, <?php echo $data['lon'] ?><BR><BR>
@@ -37,6 +38,7 @@ $query = mysqli_query($conn, "SELECT * FROM table_gunung ORDER BY id_gunung DESC
                                         <img src="gambar/<?php echo $data['image3'] ?>" width="80" height="60">,
                                         <img src="gambar/<?php echo $data['image4'] ?>" width="80" height="60">,
                                         <img src="gambar/<?php echo $data['image5'] ?>" width="80" height="60"></td>
+                                        ID Gunung : <BR><?php echo $data['id_provinsi'] ?><BR><BR>
 
                                 </tr>
                             </tbody>
