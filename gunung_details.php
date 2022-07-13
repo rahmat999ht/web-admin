@@ -20,7 +20,7 @@ $query = mysqli_query($conn, "SELECT * FROM table_gunung ORDER BY id_gunung DESC
                     <?php if (mysqli_num_rows($query) > 0) { ?>
                         <?php
                         $no = 1;
-                        $gunung = mysqli_query($conn, 'SELECT * FROM table_gunung WHERE id_gunung = ' . $_GET['id_gunung']);
+                        $gunung = mysqli_query($conn, 'SELECT * FROM table_gunung INNER JOIN table_provinsi ON table_gunung.id_provinsi = table_provinsi.id_provinsi WHERE id_gunung = ' . $_GET['id_gunung']);
                         while ($data = mysqli_fetch_array($gunung)) {
                         ?>
                             <tbody>
@@ -37,9 +37,9 @@ $query = mysqli_query($conn, "SELECT * FROM table_gunung ORDER BY id_gunung DESC
                                         <img src="gambar/<?php echo $data['image2'] ?>" width="80" height="60">,
                                         <img src="gambar/<?php echo $data['image3'] ?>" width="80" height="60">,
                                         <img src="gambar/<?php echo $data['image4'] ?>" width="80" height="60">,
-                                        <img src="gambar/<?php echo $data['image5'] ?>" width="80" height="60"></td>
-                                        ID Gunung : <BR><?php echo $data['id_provinsi'] ?><BR><BR>
-
+                                        <img src="gambar/<?php echo $data['image5'] ?>" width="80" height="60"><BR><BR>
+                                        Provinsi : <BR><?php echo $data['nama_provinsi'] ?><BR><BR>
+                                    </td>
                                 </tr>
                             </tbody>
                         <?php $no++;
