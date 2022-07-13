@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Admin Info PenGun - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,7 +33,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Admin info Pen-Gun</div>
             </a>
 
             <!-- Divider -->
@@ -46,42 +46,19 @@
             <div class="sidebar-heading">
                 Dashboard
             </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="isi_formulir.php" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Register Gunung</span>
-                </a>
-            </li> -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="index.php" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>List Gunung</span>
                 </a>
             </li>
-
-            <!-- <li class="nav-item">
-                <a class="nav-link collapsed" href="isi_prov.php" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Register Provinsi</span>
-                </a>
-            </li> -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="list_prov.php" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="prov_list.php" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>List Provinsi</span>
                 </a>
             </li>
             <hr class="sidebar-divider">
-
-            <!-- Nav Item - Log Out -->
-            <!-- <li class="nav-item ">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Log Out</span></a>
-            </li> -->
-
         </ul>
         <!-- End of Sidebar -->
 

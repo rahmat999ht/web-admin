@@ -71,7 +71,7 @@ $query = mysqli_query($conn, "SELECT * FROM table_gunung ORDER BY id_provinsi DE
                                     <td><?php echo $data['lokasi'] ?></td>
                                     <td align="center"><img src="gambar/<?php echo $data['image1']; ?>" width="80" height="60"></td>
                                     <td>
-                                        <a href="info.php?id_gunung=<?php echo $data['id_gunung']; ?>" class="btn btn-info ">Info</a>
+                                        <a href="gunung_details.php?id_gunung=<?php echo $data['id_gunung']; ?>" class="btn btn-info ">Info</a>
                                         <a href="edit.php?id_gunung=<?php echo $data['id_gunung']; ?>" class="btn btn-success ">Edit</a>
                                         <a href="hapus.php?id_gunung=<?php echo $data['id_gunung']; ?>" class="btn btn-danger " role="button" onclick="return confirm ('Yakin Hapus?')">Hapus</a>
                                     </td>
